@@ -1079,14 +1079,17 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Overall Score:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber">
+   <widget class="QLabel" name="finalScoreValue">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>450</x>
       <y>370</y>
-      <width>64</width>
-      <height>23</height>
+      <width>71</width>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
     </property>
    </widget>
    <zorder>progressBar</zorder>
@@ -1136,7 +1139,7 @@ p, li { white-space: pre-wrap; }
    <zorder>radioButton</zorder>
    <zorder>radioButton_2</zorder>
    <zorder>overallScoreTextBox</zorder>
-   <zorder>lcdNumber</zorder>
+   <zorder>finalScoreValue</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

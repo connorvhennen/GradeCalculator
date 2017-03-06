@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "functions.h"
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
@@ -7,6 +8,8 @@
 #include <QDesktopServices>
 #include <QTextEdit>
 #include <QTextBrowser>
+#include <QSpinBox>
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -54,6 +57,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui -> finalExamTextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
     ui -> overallScoreTextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
 
+    QLabel* finalV = new QLabel(QString::number(calculateFinalGrade()));
 
 
 }
