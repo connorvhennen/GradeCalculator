@@ -3,15 +3,12 @@
 #include "ui_mainwindow.h"
 #include "ui_functions.h"
 
-Functions::Functions(QWidget *parent) :
+Functions::Functions(QWidget *parent, QSpinBox *x) :
     QWidget(parent),
     ui(new Ui::Functions)
 {
     ui->setupUi(this);
 
-
-
-int Functions::getScore(QSpinBox *x) const{
     int score = 0;
 
     QSpinBox* gradePart = new QSpinBox;

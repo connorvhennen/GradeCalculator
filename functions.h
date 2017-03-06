@@ -17,6 +17,7 @@ class Functions : public QWidget
 
 public:
     explicit Functions(QWidget *parent = 0);
+    explicit Functions(QWidget *parent = 0, QSpinBox *box = 0);
     int getScore(QSpinBox *x) const;
     int calculateFinalGrade() const;
     ~Functions();
