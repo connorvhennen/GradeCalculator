@@ -237,17 +237,19 @@ void MainWindow::reset(){
     else if(picLevel == 2 && MainWindow::pic == 0){
          setTo_CfromA();
     }
-    else if(picLevel == 2 && MainWindow::pic == 0){
-         setTo_CfromA();
+    else if(picLevel == 2 && MainWindow::pic == 1){
+         setTo_CfromB();
     }
 
 }
 
 void MainWindow::setTo_AfromB(){
+    pic = 0;
     //MainWindow::ui -> -> deleteLater();
 }
 
 void MainWindow::setTo_AfromC(){
+    pic = 0;
 
     ui ->horizontalSlider_5 ->show();
     ui ->horizontalSlider_6 ->show();
@@ -386,6 +388,7 @@ void MainWindow::compute_sum10b() const{
 }
 
 void MainWindow::setTo_BfromA(){
+    pic = 1;
     //use make_heap to sort homework assignments to drop the lowest score
     //http://www.cplusplus.com/reference/algorithm/make_heap/
     ui -> ten10bhorzslider -> show();
@@ -456,14 +459,17 @@ void MainWindow::setTo_BfromA(){
     QObject::disconnect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), this,
                       SLOT(reset()));
 
-
+    pic = 1;
 
 
 }
 
 void MainWindow::setTo_BfromC(){
+
+
     setTo_AfromC();
     setTo_BfromA();
+    pic = 1;
 }
 
 
@@ -686,6 +692,6 @@ void MainWindow::setTo_CfromA(){
 
 
 void MainWindow::setTo_CfromB(){
-
+    pic = 2;
 
 }
