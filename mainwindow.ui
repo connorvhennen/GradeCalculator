@@ -77,31 +77,6 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="hw1TextBox">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>50</y>
-      <width>41</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>true</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-
-hw1TextBox -&gt; QTextEdit { selection-background-color: black }</string>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.SF NS Text'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Al Bayan';&quot;&gt;Hw 1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
    <widget class="QSpinBox" name="spinBox">
     <property name="geometry">
      <rect>
@@ -132,29 +107,6 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="hw2TextBox">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>90</y>
-      <width>41</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>true</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.SF NS Text'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Al Bayan';&quot;&gt;Hw 2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QProgressBar" name="progressBar_2">
@@ -230,23 +182,6 @@ p, li { white-space: pre-wrap; }
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="hw3TextBox">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>130</y>
-      <width>41</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Al Bayan'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Hw 3&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
    <widget class="QProgressBar" name="progressBar_3">
     <property name="geometry">
      <rect>
@@ -318,23 +253,6 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="hw4TextBox">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>170</y>
-      <width>41</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Al Bayan'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Hw 4&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QProgressBar" name="progressBar_4">
@@ -410,23 +328,6 @@ p, li { white-space: pre-wrap; }
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="hw5TextBox">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>210</y>
-      <width>41</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Al Bayan'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Hw 5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
    <widget class="QProgressBar" name="progressBar_5">
     <property name="geometry">
      <rect>
@@ -500,23 +401,6 @@ p, li { white-space: pre-wrap; }
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="hw6TextBox">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>250</y>
-      <width>41</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Al Bayan'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Hw 6&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
    <widget class="QProgressBar" name="progressBar_6">
     <property name="geometry">
      <rect>
@@ -582,23 +466,6 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="maximum">
      <number>100</number>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="hw7TextBox">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>290</y>
-      <width>41</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Al Bayan'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Hw 7&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QSlider" name="horizontalSlider_7">
@@ -674,23 +541,6 @@ p, li { white-space: pre-wrap; }
      <number>100</number>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="hw8TextBox">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>330</y>
-      <width>41</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Al Bayan'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Hw 8&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
    <widget class="QSlider" name="horizontalSlider_8">
     <property name="geometry">
      <rect>
@@ -749,23 +599,6 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="textVisible">
      <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="midterm1TextBox">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>50</y>
-      <width>81</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Al Bayan'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Midterm 1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QSlider" name="horizontalSlider_9">
@@ -901,23 +734,6 @@ p, li { white-space: pre-wrap; }
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="midterm2TextBox">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>130</y>
-      <width>81</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Al Bayan'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Midterm 2&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
    <widget class="QSpinBox" name="spinBox_10">
     <property name="geometry">
      <rect>
@@ -991,23 +807,6 @@ p, li { white-space: pre-wrap; }
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="finalExamTextBox">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>210</y>
-      <width>81</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Al Bayan'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Final Exam&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
    <widget class="QSpinBox" name="spinBox_11">
     <property name="geometry">
      <rect>
@@ -1059,58 +858,227 @@ p, li { white-space: pre-wrap; }
      <string>Schema B</string>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="overallScoreTextBox">
+   <widget class="QLabel" name="hw1Label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hw1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hw2Label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>86</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hw2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hw2Label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hw3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hw2Label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hw4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hw2Label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hw5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hw2Label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hw6</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hw2Label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hw7</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hw2Label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hw8</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hw2Label_8">
     <property name="geometry">
      <rect>
       <x>340</x>
-      <y>370</y>
-      <width>101</width>
-      <height>21</height>
+      <y>40</y>
+      <width>141</width>
+      <height>41</height>
      </rect>
     </property>
-    <property name="autoFillBackground">
-     <bool>true</bool>
-    </property>
-    <property name="html">
-     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Al Bayan'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Overall Score:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <property name="text">
+     <string>Midterm 1</string>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber">
+   <widget class="QLabel" name="hw2Label_9">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>120</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Midterm 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hw2Label_10">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>200</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Final Exam</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hw2Label_11">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>360</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Overall Score:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>460</x>
-      <y>370</y>
-      <width>64</width>
-      <height>23</height>
+      <y>365</y>
+      <width>60</width>
+      <height>21</height>
      </rect>
     </property>
+    <property name="text">
+     <string>0.0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hw1Label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Course:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>351</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Pic 10A. Introduction to Programming</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pic 10B. Intermediate Programming</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pic 10C. Advanced Programming</string>
+     </property>
+    </item>
    </widget>
    <zorder>progressBar</zorder>
-   <zorder>hw1TextBox</zorder>
    <zorder>spinBox</zorder>
-   <zorder>hw2TextBox</zorder>
    <zorder>spinBox_2</zorder>
-   <zorder>hw3TextBox</zorder>
    <zorder>progressBar_3</zorder>
    <zorder>spinBox_3</zorder>
-   <zorder>hw4TextBox</zorder>
    <zorder>progressBar_4</zorder>
    <zorder>spinBox_4</zorder>
-   <zorder>hw5TextBox</zorder>
    <zorder>progressBar_5</zorder>
    <zorder>spinBox_5</zorder>
-   <zorder>hw6TextBox</zorder>
    <zorder>progressBar_6</zorder>
    <zorder>spinBox_6</zorder>
    <zorder>spinBox_7</zorder>
-   <zorder>hw7TextBox</zorder>
    <zorder>progressBar_7</zorder>
    <zorder>spinBox_8</zorder>
-   <zorder>hw8TextBox</zorder>
    <zorder>progressBar_8</zorder>
    <zorder>progressBar_2</zorder>
    <zorder>horizontalSlider_2</zorder>
@@ -1121,22 +1089,32 @@ p, li { white-space: pre-wrap; }
    <zorder>horizontalSlider_7</zorder>
    <zorder>horizontalSlider_8</zorder>
    <zorder>horizontalSlider</zorder>
-   <zorder>midterm1TextBox</zorder>
    <zorder>progressBar_9</zorder>
    <zorder>spinBox_9</zorder>
    <zorder>progressBar_10</zorder>
    <zorder>horizontalSlider_10</zorder>
-   <zorder>midterm2TextBox</zorder>
    <zorder>spinBox_10</zorder>
    <zorder>horizontalSlider_9</zorder>
    <zorder>progressBar_11</zorder>
    <zorder>horizontalSlider_11</zorder>
-   <zorder>finalExamTextBox</zorder>
    <zorder>spinBox_11</zorder>
    <zorder>radioButton</zorder>
    <zorder>radioButton_2</zorder>
-   <zorder>overallScoreTextBox</zorder>
-   <zorder>lcdNumber</zorder>
+   <zorder>hw1Label</zorder>
+   <zorder>hw2Label</zorder>
+   <zorder>hw2Label_2</zorder>
+   <zorder>hw2Label_3</zorder>
+   <zorder>hw2Label_4</zorder>
+   <zorder>hw2Label_5</zorder>
+   <zorder>hw2Label_6</zorder>
+   <zorder>hw2Label_7</zorder>
+   <zorder>hw2Label_8</zorder>
+   <zorder>hw2Label_9</zorder>
+   <zorder>hw2Label_10</zorder>
+   <zorder>hw2Label_11</zorder>
+   <zorder>label</zorder>
+   <zorder>hw1Label_2</zorder>
+   <zorder>comboBox</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
