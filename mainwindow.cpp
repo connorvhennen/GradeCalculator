@@ -539,8 +539,7 @@ void MainWindow::schemaCheck10b() const{
 
 void MainWindow::setTo_BfromA(){
     pic = 1;
-    //use make_heap to sort homework assignments to drop the lowest score
-    //http://www.cplusplus.com/reference/algorithm/make_heap/
+
     ui -> ten10bhorzslider -> show();
     ui -> tenBhorzSlider2 -> show();
     ui -> tenBhw -> show();
@@ -677,31 +676,17 @@ void MainWindow::setTo_BfromA(){
 
      QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), this,
                        SLOT(reset()));
-//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBspinBox,
-//                       SLOT(hide()));
-//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBSpinBox,
-//                       SLOT(hide()));
-//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBporgBar,
-//                       SLOT(hide()));
-//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBprogBar,
-//                       SLOT(hide()));
-//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBSpinBox,
-//                       SLOT(hide()));
-//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBhwLabel2,
-//                       SLOT(hide()));
-//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBhorzSlider2,
-//                       SLOT(hide()));
-//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->ten10bhorzslider,
-//                       SLOT(hide()));
-//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBhw,
-//                       SLOT(hide()));
+
 
     pic = 1;
 }
 
 void MainWindow::setTo_BfromC(){
 
-
+    ui->tenBhorzSlider2 ->setValue(0);
+    ui->ten10bhorzslider ->setValue(0);
+    ui->tenBprogBar ->setValue(0);
+    ui->tenBporgBar ->setValue(0);
     setTo_AfromC();
     setTo_BfromA();
     pic = 1;
