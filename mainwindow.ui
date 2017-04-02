@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>644</width>
-    <height>463</height>
+    <height>497</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -861,105 +861,105 @@
    <widget class="QLabel" name="hw1Label">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>40</y>
-      <width>31</width>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Hw1</string>
+     <string>Hw #1</string>
     </property>
    </widget>
    <widget class="QLabel" name="hw2Label">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>86</y>
-      <width>41</width>
+      <width>51</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>Hw2</string>
+     <string>Hw #2</string>
     </property>
    </widget>
    <widget class="QLabel" name="hw2Label_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>120</y>
-      <width>31</width>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Hw3</string>
+     <string>Hw #3</string>
     </property>
    </widget>
    <widget class="QLabel" name="hw2Label_3">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>160</y>
-      <width>31</width>
+      <width>51</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Hw4</string>
+     <string>Hw #4</string>
     </property>
    </widget>
    <widget class="QLabel" name="hw2Label_4">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>200</y>
-      <width>31</width>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Hw5</string>
+     <string>Hw #5</string>
     </property>
    </widget>
    <widget class="QLabel" name="hw2Label_5">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>240</y>
-      <width>31</width>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Hw6</string>
+     <string>Hw #6</string>
     </property>
    </widget>
    <widget class="QLabel" name="hw2Label_6">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>280</y>
-      <width>31</width>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Hw7</string>
+     <string>Hw #7</string>
     </property>
    </widget>
    <widget class="QLabel" name="hw2Label_7">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>320</y>
-      <width>31</width>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Hw8</string>
+     <string>Hw #8</string>
     </property>
    </widget>
    <widget class="QLabel" name="hw2Label_8">
@@ -972,7 +972,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Midterm 1</string>
+     <string>Midterm #1</string>
     </property>
    </widget>
    <widget class="QLabel" name="hw2Label_9">
@@ -985,7 +985,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Midterm 2</string>
+     <string>Midterm #2</string>
     </property>
    </widget>
    <widget class="QLabel" name="hw2Label_10">
@@ -1065,6 +1065,178 @@
      </property>
     </item>
    </widget>
+   <widget class="QProgressBar" name="tenBprogBar">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>360</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>171</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Apple Braille</family>
+      <pointsize>20</pointsize>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="tenBSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>370</y>
+      <width>47</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tenBhw">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hw #9</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="ten10bhorzslider">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>360</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="tenBporgBar">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>400</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>171</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Apple Braille</family>
+      <pointsize>20</pointsize>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="tenBspinBox">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>410</y>
+      <width>47</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tenBhwLabel2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hw #10</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="tenBhorzSlider2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>400</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
    <zorder>progressBar</zorder>
    <zorder>spinBox</zorder>
    <zorder>spinBox_2</zorder>
@@ -1115,6 +1287,14 @@
    <zorder>label</zorder>
    <zorder>hw1Label_2</zorder>
    <zorder>comboBox</zorder>
+   <zorder>tenBprogBar</zorder>
+   <zorder>tenBSpinBox</zorder>
+   <zorder>tenBhw</zorder>
+   <zorder>ten10bhorzslider</zorder>
+   <zorder>tenBporgBar</zorder>
+   <zorder>tenBspinBox</zorder>
+   <zorder>tenBhwLabel2</zorder>
+   <zorder>tenBhorzSlider2</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

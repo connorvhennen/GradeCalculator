@@ -7,6 +7,8 @@
 #include <QEvent>
 #include <QAbstractButton>
 #include <QComboBox>
+#include <algorithm>
+#include <vector>
 
 
 namespace Ui {
@@ -32,15 +34,27 @@ private slots:
 //    void compute_sum_10C() const;
 //    void schemaCheck_10C() const;
 
-    void reset() const;
-    void setTo_10A() const;
-    void setTo_10B() const;
-    void setTo_10C() const;
+    void reset();
+    void setTo_AfromB();
+    void setTo_AfromC();
+    void setTo_BfromC();
+    void setTo_BfromA();
+    void setTo_CfromA();
+    void setTo_CfromB();
+
+    void compute_sum10c() const;
+    void schemaCheck10c() const;
+
+    void compute_sum10b() const;
+    //void schemaCheck10b() const;
 
 
+public:
+    int pic = 0;
 
 private:
     Ui::MainWindow *ui;
+
 };
 
 #endif // MAINWINDOW_H
