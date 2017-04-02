@@ -46,7 +46,7 @@ private slots:
     void schemaCheck10c() const;
 
     void compute_sum10b() const;
-    //void schemaCheck10b() const;
+    void schemaCheck10b() const;
 
 
 public:

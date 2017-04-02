@@ -245,7 +245,94 @@ void MainWindow::reset(){
 }
 
 void MainWindow::setTo_AfromB(){
-    pic = 0;
+    ui -> hw2Label_9 ->setText("Midterm #2");
+    ui -> ten10bhorzslider -> hide();
+    ui -> tenBhorzSlider2 -> hide();
+    ui -> tenBhw -> hide();
+    ui -> tenBhwLabel2 -> hide();
+    ui -> tenBporgBar -> hide();
+    ui -> tenBprogBar -> hide();
+    ui -> tenBSpinBox -> hide();
+    ui -> tenBspinBox -> hide();
+
+    ui ->spinBox_11 -> show();
+    ui ->hw2Label_10 -> show();
+    ui ->horizontalSlider_11 ->show();
+    ui ->progressBar_11 ->show();
+
+    //updating progress bar value according to respective horizontal slider position
+    connect(ui-> horizontalSlider, SIGNAL(valueChanged(int)),ui -> progressBar, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_2, SIGNAL(valueChanged(int)),ui -> progressBar_2, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_3, SIGNAL(valueChanged(int)),ui -> progressBar_3, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_4, SIGNAL(valueChanged(int)),ui -> progressBar_4, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_4, SIGNAL(valueChanged(int)),ui -> progressBar_4, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_5, SIGNAL(valueChanged(int)),ui -> progressBar_5, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_6, SIGNAL(valueChanged(int)),ui -> progressBar_6, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_7, SIGNAL(valueChanged(int)),ui -> progressBar_7, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_8, SIGNAL(valueChanged(int)),ui -> progressBar_8, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_9, SIGNAL(valueChanged(int)),ui -> progressBar_9, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_10, SIGNAL(valueChanged(int)),ui -> progressBar_10, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_11, SIGNAL(valueChanged(int)),ui -> progressBar_11, SLOT(setValue(int)));
+
+    //updating spinbox value according to respectiveprogress bar value
+    connect(ui -> progressBar, SIGNAL(valueChanged(int)), ui-> spinBox, SLOT(setValue(int)));
+    connect(ui -> progressBar_2, SIGNAL(valueChanged(int)), ui-> spinBox_2, SLOT(setValue(int)));
+    connect(ui -> progressBar_3, SIGNAL(valueChanged(int)), ui-> spinBox_3, SLOT(setValue(int)));
+    connect(ui -> progressBar_4, SIGNAL(valueChanged(int)), ui-> spinBox_4, SLOT(setValue(int)));
+    connect(ui -> progressBar_5, SIGNAL(valueChanged(int)), ui-> spinBox_5, SLOT(setValue(int)));
+    connect(ui -> progressBar_6, SIGNAL(valueChanged(int)), ui-> spinBox_6, SLOT(setValue(int)));
+    connect(ui -> progressBar_7, SIGNAL(valueChanged(int)), ui-> spinBox_7, SLOT(setValue(int)));
+    connect(ui -> progressBar_8, SIGNAL(valueChanged(int)), ui-> spinBox_8, SLOT(setValue(int)));
+    connect(ui -> progressBar_9, SIGNAL(valueChanged(int)), ui-> spinBox_9, SLOT(setValue(int)));
+    connect(ui -> progressBar_10, SIGNAL(valueChanged(int)), ui-> spinBox_10, SLOT(setValue(int)));
+    connect(ui -> progressBar_11, SIGNAL(valueChanged(int)), ui-> spinBox_11, SLOT(setValue(int)));
+
+
+//    ui -> hw1TextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
+//    ui -> hw2TextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
+//    ui -> hw3TextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
+//    ui -> hw4TextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
+//    ui -> hw5TextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
+//    ui -> hw6TextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
+//    ui -> hw7TextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
+//    ui -> hw8TextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
+//    ui -> midterm1TextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
+//    ui -> midterm2TextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
+//    ui -> finalExamTextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
+//    ui -> overallScoreTextBox ->setStyleSheet(" QTextBrowser { background-color: rgba(255, 255, 255, 30);}");
+
+    QObject::connect( ui->spinBox ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( compute_sum() )  );
+    QObject::connect( ui->spinBox_2 ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( compute_sum() ) );
+    QObject::connect( ui->spinBox_3 ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( compute_sum() )  );
+    QObject::connect( ui->spinBox_4 ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( compute_sum() ) );
+    QObject::connect( ui->spinBox_5 ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( compute_sum() )  );
+    QObject::connect( ui->spinBox_6 ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( compute_sum() ) );
+    QObject::connect( ui->spinBox_7,SIGNAL( valueChanged(int) ),
+                         this, SLOT( compute_sum() )  );
+    QObject::connect( ui->spinBox_8 ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( compute_sum() ) );
+    QObject::connect( ui->spinBox_9 ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( compute_sum() )  );
+    QObject::connect( ui->spinBox_10 ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( compute_sum() ) );
+    QObject::connect( ui->spinBox_11 ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( compute_sum() )  );
+
+    QObject::connect( ui->spinBox_9 ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( schemaCheck() )  );
+    QObject::connect( ui->spinBox_10 ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( schemaCheck() )  );
+    QObject::connect( ui->spinBox_11 ,SIGNAL( valueChanged(int) ),
+                         this, SLOT( schemaCheck() )  );
+
+    QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), this,
+                      SLOT(reset()));
     //MainWindow::ui -> -> deleteLater();
 }
 
@@ -370,20 +457,83 @@ void MainWindow::compute_sum10b() const{
     scores.push_back(ui->spinBox_6-> value() );
     scores.push_back(ui->spinBox_7-> value() );
     scores.push_back(ui->spinBox_8-> value() );
-    scores.push_back(ui->spinBox_9-> value() );
-    scores.push_back(ui->spinBox_10-> value() );
-    scores.push_back(ui->spinBox_11-> value() );
     scores.push_back(ui->tenBSpinBox-> value() );
     scores.push_back(ui->tenBspinBox-> value() );
+
 
     std::make_heap (++scores.begin(),scores.end());
     std::sort_heap(++scores.begin(), scores.end());
 
+    //drops lowest homework
     for(size_t i = 2; i <= 10; ++i){
         homeworkScores = homeworkScores + scores[i]/9;
     }
-    std::cout <<homeworkScores;
 
+    midterm1Score = ui -> spinBox_9 ->value();
+    finalExamScore = ui ->spinBox_10 ->value();
+
+    double schema1Final = (homeworkScores * 0.3) + (midterm1Score * 0.3) + (finalExamScore * 0.4);
+    double schema2Final = (homeworkScores * 0.3) + (finalExamScore * 0.7);
+    double finalGrade = 0;
+    if(schema1Final >= schema2Final){
+        finalGrade = schema1Final;
+    }
+    else if(schema1Final < schema2Final){
+        finalGrade = schema2Final;
+    }
+
+    QString text(QString::number(finalGrade));
+    ui->label->setText(text);
+}
+
+void MainWindow::schemaCheck10b() const{
+    double homeworkScores = 0;
+    std::vector<double> scores(1);
+    double midterm1Score =0;
+    double finalExamScore = 0;
+
+
+
+    scores.push_back(ui->spinBox-> value() );
+    scores.push_back(ui->spinBox_2-> value() );
+    scores.push_back(ui->spinBox_3-> value() );
+    scores.push_back(ui->spinBox_4-> value() );
+    scores.push_back(ui->spinBox_5-> value() );
+    scores.push_back(ui->spinBox_6-> value() );
+    scores.push_back(ui->spinBox_7-> value() );
+    scores.push_back(ui->spinBox_8-> value() );
+    scores.push_back(ui->tenBSpinBox-> value() );
+    scores.push_back(ui->tenBspinBox-> value() );
+
+
+    std::make_heap (++scores.begin(),scores.end());
+    std::sort_heap(++scores.begin(), scores.end());
+
+    //drops lowest homework
+    for(size_t i = 1; i <= 10; ++i){
+        homeworkScores = homeworkScores + scores[i]/9;
+    }
+
+    midterm1Score = ui -> spinBox_9 ->value();
+    finalExamScore = ui ->spinBox_10 ->value();
+
+    double schema1total = (homeworkScores * 0.3) + (midterm1Score * 0.3) + (finalExamScore * 0.4);
+    double schema2total = (homeworkScores * 0.3) + (finalExamScore * 0.7);
+
+
+    if(schema1total > schema2total){
+        ui -> radioButton->click();
+        ui -> radioButton -> setChecked(true);
+        ui -> radioButton_2 -> setDisabled(true);
+        ui -> radioButton_2 -> setChecked(false);
+    }
+    else if(schema1total < schema2total)
+    {
+        ui -> radioButton_2->click();
+        ui -> radioButton_2 -> setChecked(true);
+        ui -> radioButton -> setDisabled(true);
+        ui -> radioButton -> setChecked(false);
+    }
 
 }
 
@@ -399,6 +549,13 @@ void MainWindow::setTo_BfromA(){
     ui -> tenBprogBar -> show();
     ui -> tenBSpinBox -> show();
     ui -> tenBspinBox -> show();
+
+    QString final = "Final Exam";
+    ui -> hw2Label_9 ->setText(final);
+    ui ->spinBox_11 -> hide();
+    ui ->hw2Label_10 -> hide();
+    ui ->horizontalSlider_11 ->hide();
+    ui ->progressBar_11 ->hide();
 
     disconnect(ui-> horizontalSlider, SIGNAL(valueChanged(int)),ui -> progressBar, SLOT(setValue(int)));
     disconnect(ui-> horizontalSlider_2, SIGNAL(valueChanged(int)),ui -> progressBar_2, SLOT(setValue(int)));
@@ -459,10 +616,86 @@ void MainWindow::setTo_BfromA(){
     QObject::disconnect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), this,
                       SLOT(reset()));
 
+    connect(ui-> horizontalSlider, SIGNAL(valueChanged(int)),ui -> progressBar, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_2, SIGNAL(valueChanged(int)),ui -> progressBar_2, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_3, SIGNAL(valueChanged(int)),ui -> progressBar_3, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_4, SIGNAL(valueChanged(int)),ui -> progressBar_4, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_4, SIGNAL(valueChanged(int)),ui -> progressBar_4, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_5, SIGNAL(valueChanged(int)),ui -> progressBar_5, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_6, SIGNAL(valueChanged(int)),ui -> progressBar_6, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_7, SIGNAL(valueChanged(int)),ui -> progressBar_7, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_8, SIGNAL(valueChanged(int)),ui -> progressBar_8, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_9, SIGNAL(valueChanged(int)),ui -> progressBar_9, SLOT(setValue(int)));
+    connect(ui-> horizontalSlider_10, SIGNAL(valueChanged(int)),ui -> progressBar_10, SLOT(setValue(int)));
+    connect(ui->ten10bhorzslider, SIGNAL(valueChanged(int)),ui -> tenBprogBar, SLOT(setValue(int)));
+    connect(ui-> tenBhorzSlider2, SIGNAL(valueChanged(int)),ui -> tenBporgBar, SLOT(setValue(int)));
+
+    //connect to spinboxes
+    connect(ui -> progressBar, SIGNAL(valueChanged(int)), ui-> spinBox, SLOT(setValue(int)));
+    connect(ui -> progressBar_2, SIGNAL(valueChanged(int)), ui-> spinBox_2, SLOT(setValue(int)));
+    connect(ui -> progressBar_3, SIGNAL(valueChanged(int)), ui-> spinBox_3, SLOT(setValue(int)));
+    connect(ui -> progressBar_4, SIGNAL(valueChanged(int)), ui-> spinBox_4, SLOT(setValue(int)));
+    connect(ui -> progressBar_5, SIGNAL(valueChanged(int)), ui-> spinBox_5, SLOT(setValue(int)));
+    connect(ui -> progressBar_6, SIGNAL(valueChanged(int)), ui-> spinBox_6, SLOT(setValue(int)));
+    connect(ui -> progressBar_7, SIGNAL(valueChanged(int)), ui-> spinBox_7, SLOT(setValue(int)));
+    connect(ui -> progressBar_8, SIGNAL(valueChanged(int)), ui-> spinBox_8, SLOT(setValue(int)));
+    connect(ui -> progressBar_9, SIGNAL(valueChanged(int)), ui-> spinBox_9, SLOT(setValue(int)));
+    connect(ui -> progressBar_10, SIGNAL(valueChanged(int)), ui-> spinBox_10, SLOT(setValue(int)));
+     connect(ui -> tenBporgBar, SIGNAL(valueChanged(int)), ui-> tenBspinBox, SLOT(setValue(int)));
+     connect(ui -> tenBprogBar, SIGNAL(valueChanged(int)), ui-> tenBSpinBox, SLOT(setValue(int)));
+
+     QObject::connect( ui->spinBox ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( compute_sum10b() )  );
+     QObject::connect( ui->spinBox_2 ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( compute_sum10b() ) );
+     QObject::connect( ui->spinBox_3 ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( compute_sum10b() )  );
+     QObject::connect( ui->spinBox_4 ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( compute_sum10b() ) );
+     QObject::connect( ui->spinBox_5 ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( compute_sum10b() )  );
+     QObject::connect( ui->spinBox_6 ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( compute_sum10b() ) );
+     QObject::connect( ui->spinBox_7,SIGNAL( valueChanged(int) ),
+                          this, SLOT( compute_sum10b() )  );
+     QObject::connect( ui->spinBox_8 ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( compute_sum10b() ) );
+     QObject::connect( ui->spinBox_9 ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( compute_sum10b() )  );
+     QObject::connect( ui->spinBox_10 ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( compute_sum10b() ) );
+     QObject::connect( ui->tenBspinBox ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( compute_sum10b() )  );
+     QObject::connect( ui->tenBSpinBox ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( compute_sum10b() ) );
+
+     QObject::connect( ui->spinBox_9 ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( schemaCheck10b() )  );
+     QObject::connect( ui->spinBox_10 ,SIGNAL( valueChanged(int) ),
+                          this, SLOT( schemaCheck10b() )  );
 
 
-//    setTo_CfromA();
-//    setTo_BfromC();
+     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), this,
+                       SLOT(reset()));
+//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBspinBox,
+//                       SLOT(hide()));
+//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBSpinBox,
+//                       SLOT(hide()));
+//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBporgBar,
+//                       SLOT(hide()));
+//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBprogBar,
+//                       SLOT(hide()));
+//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBSpinBox,
+//                       SLOT(hide()));
+//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBhwLabel2,
+//                       SLOT(hide()));
+//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBhorzSlider2,
+//                       SLOT(hide()));
+//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->ten10bhorzslider,
+//                       SLOT(hide()));
+//     QObject::connect( ui -> comboBox, SIGNAL(currentIndexChanged(int) ), ui ->tenBhw,
+//                       SLOT(hide()));
+
     pic = 1;
 }
 
@@ -694,8 +927,11 @@ void MainWindow::setTo_CfromA(){
 
 
 void MainWindow::setTo_CfromB(){
-    pic = 2;
 
+
+    setTo_AfromB();
+    setTo_CfromA();
+    pic = 2;
 
 
 }
